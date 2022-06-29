@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="560f7480-7ceb-421b-8632-fb323a0ba61a" name="Changes" comment="">
+    <list default="true" id="560f7480-7ceb-421b-8632-fb323a0ba61a" name="Changes" comment="Consumer API&#10;컨슈머 프로젝트 생성&#10;SimpleConsumer(자동 오프셋 커밋)&#10;동기 오프셋 커밋 컨슈머&#10;비동기 오프셋 커밋 컨슈머&#10;리밸런스 리스너를 갖는 컨슈머&#10;파티션 할당 컨슈머">
       <change afterPath="$PROJECT_DIR$/../.idea/kafka-with-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/AsynOffsetCommitConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/PartitionAssgiendConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/RebalanceListenerConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SimpleConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SynOffsetCommitConsumer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../simple-kafka-producer/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/AsynOffsetCommitConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/PartitionAssgiendConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/RebalanceListenerConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SimpleConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SynOffsetCommitConsumer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../simple-kafka-producer/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-kafka-producer/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../simple-kafka-producer/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-kafka-producer/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../simple-kafka-producer/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../simple-kafka-producer/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -102,8 +95,16 @@
       <option name="presentableId" value="Default" />
       <updated>1655995306797</updated>
       <workItem from="1655995308026" duration="2000" />
-      <workItem from="1656428591410" duration="4306000" />
+      <workItem from="1656428591410" duration="5637000" />
     </task>
+    <task id="LOCAL-00001" summary="Consumer API&#10;컨슈머 프로젝트 생성&#10;SimpleConsumer(자동 오프셋 커밋)&#10;동기 오프셋 커밋 컨슈머&#10;비동기 오프셋 커밋 컨슈머&#10;리밸런스 리스너를 갖는 컨슈머&#10;파티션 할당 컨슈머">
+      <created>1656434433781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656434433781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +120,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Consumer API&#10;컨슈머 프로젝트 생성&#10;SimpleConsumer(자동 오프셋 커밋)&#10;동기 오프셋 커밋 컨슈머&#10;비동기 오프셋 커밋 컨슈머&#10;리밸런스 리스너를 갖는 컨슈머&#10;파티션 할당 컨슈머" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consumer API&#10;컨슈머 프로젝트 생성&#10;SimpleConsumer(자동 오프셋 커밋)&#10;동기 오프셋 커밋 컨슈머&#10;비동기 오프셋 커밋 컨슈머&#10;리밸런스 리스너를 갖는 컨슈머&#10;파티션 할당 컨슈머" />
   </component>
 </project>
