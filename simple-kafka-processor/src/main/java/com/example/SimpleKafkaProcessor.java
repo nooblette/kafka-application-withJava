@@ -21,14 +21,14 @@ public class SimpleKafkaProcessor {
         props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
 
-        Topology topology = new Topology();
-        topology.addSource("Source", STREAM_LOG)
-                .addProcessor("Process",
+        Topology topology = new Topology(); // 프로세서 API를 사용한 토폴로지를 구성
+        topology.addSource("Source", STREAM_LOG) // stream_log 토픽을 소스 프로세서 가져오기 위함, addSource(소스 프로세서의 이름, 대상 토픽의 이름)
+                .addProcessor("Process", // 스트림 프로세서를 사용하기 위함, addProcessor(스트림 프로세서의 이름, 사용자가 정의한 프로세서 인스턴스, 토폴로지의 부모노드)
                         () -> new FilterProcessor(),
-                        "Source")
-                .addSink("Sink",
+                        "Source") // 부모노드는 "Source" 즉, Source processor -> Process processor 로 스트리밍
+                .addSink("Sink", // 싱크 프로세서를 사용하여 데이터를 저장하기 위함, addSink(싱크 프로세서의 이름, 저장할 토픽의 이름, 토폴로지의 부모노드)
                         STREAM_LOG_FILTER,
-                        "Process");
+                        "Process");  // 필터링 처리가 완료된 데이터를 가져와서 저장해야하므로 부모노드는 "Process"
 
         KafkaStreams streaming = new KafkaStreams(topology, props);
         streaming.start();
