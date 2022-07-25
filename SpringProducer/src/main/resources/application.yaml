@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    producer:
+      acks: all
+      batch-size:
+      bootstrap-servers: my-kafka:9092
+      buffer-memory:
+      client-id:
+      compression-type:
+      key-serializer:
+      properties: *
+      retries:
+      transaction-id-prefix:
+      value-serializer:
