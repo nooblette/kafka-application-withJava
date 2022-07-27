@@ -1,0 +1,29 @@
+spring:
+  kafka:
+    consumer:
+      auto-commit-interval:
+      auto-offset-reset:
+      bootstrap-servers: my-kafka:9092
+      client-id:
+      enable-auto-commit:
+      fetch-max-wait:
+      fetch-min-size:
+      group-id:
+      heartbeat-interval:
+      key-deserializer:
+      max-poll-records:
+      properties: *
+      value-deserializer:
+    listener:
+      ack-count:
+      ack-mode: manual_immediate # 배치 커밋 리스너를 사용할 경우(수동 커밋)
+      ack-time:
+      client-id:
+      concurrency:
+      idle-event-interval:
+      log-container-config:
+      monitor-interval:
+      no-poll-threshold:
+      poll-timeout:
+      #type: single # 메시지 리스너를 사용할 경우
+      type: batch # 배치 리스너를 사용할 경우
